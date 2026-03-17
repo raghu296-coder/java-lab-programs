@@ -1,0 +1,20 @@
+class MyMath {
+    static void add(int a, int b) { System.out.println(a + b); }
+    static void add(double a, double b, double c) { System.out.println(a + b + c); }
+    static void add(char a, char b) { System.out.println((int)a + (int)b); }
+    static void add(int[] arr) {
+        int sum = 0;
+        for (int x : arr) sum += x;
+        System.out.println(sum);
+    }
+    static void add(String[] arr) {
+        String res = "";
+        for (String s : arr) res += s.charAt(0);
+        System.out.println(res);
+    }
+    static void add(String s) {
+        int sum = 0;
+        for (char c : s.toCharArray()) sum += c;
+        System.out.println(sum);
+    }
+}
