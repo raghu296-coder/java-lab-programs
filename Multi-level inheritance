@@ -1,0 +1,30 @@
+class Person {
+    int id;
+    String name;
+
+    Person(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+
+class Student extends Person {
+    int marks;
+    String status;
+
+    Student(int id, String name, int marks) {
+        super(id, name);
+        this.marks = marks;
+        status = (marks >= 40) ? "Pass" : "Fail";
+    }
+}
+
+class Result extends Student {
+    Result(int id, String name, int marks) {
+        super(id, name, marks);
+    }
+
+    void displayResult() {
+        System.out.println("Result(" + id + ", " + name + ", " + marks + ", " + status + ")");
+    }
+}
