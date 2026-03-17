@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main {
+
+    static Scanner sc = new Scanner(System.in);
+
+    static void displayPersonalDetails() {
+        String name = sc.nextLine();
+        int age = Integer.parseInt(sc.nextLine());
+        String gender = sc.nextLine();
+
+        System.out.println("--- Personal Details ---");
+        System.out.println("Name : " + name);
+        System.out.println("Age : " + age);
+        System.out.println("Gender : " + gender);
+        System.out.println();
+    }
+
+    static void displayQualificationDetails() {
+        String qual = sc.nextLine();
+        String college = sc.nextLine();
+        int year = Integer.parseInt(sc.nextLine());
+
+        System.out.println("--- Qualification Details ---");
+        System.out.println("Qualification : " + qual);
+        System.out.println("College : " + college);
+        System.out.println("Year of Pass : " + year);
+    }
+
+    public static void main(String[] args) {
+        displayPersonalDetails();
+        displayQualificationDetails();
+    }
+}
